@@ -1,5 +1,7 @@
-* {
-    box-sizing: border-box;
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -18,10 +20,11 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+.text-center { text-align: center; }
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 1em 3em;
 }
 
 #businessHeader {
