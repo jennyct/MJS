@@ -44,6 +44,9 @@ body {
 
 #shop {
 	font-size: 18px;
+	font-color: #000000;
+	font-weight: bold;
+	background-color: #b3d4fc;
 	border: 1px solid black;
 	border-radius: 25px;
 	padding: 0.5em;
