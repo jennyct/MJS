@@ -24,3 +24,30 @@ body {
     padding: 15px;
 }
 
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+img {
+	height: 429px;
+	width: 455px;
+	float: right;
+}
+
+table {
+	float: left;
+}
+
+td {
+	height: 107px;
+	width: 113px;
+}
+
+td img {
+	height: 107px;
+	width: 113px;
+	float: left;
+	position: relative;
+}
