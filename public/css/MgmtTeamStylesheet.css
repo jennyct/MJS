@@ -1,0 +1,35 @@
+#header_container {
+	width: 50%;
+	margin: 10px auto;
+}
+
+h2 {
+	text-align: center;
+	border: solid 2px;
+	padding: 20px 50px 20px 50px;
+}
+
+#desc_container {
+	width: 70%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.img-circle {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	border: solid 2px;
+	margin-left: 5.5em;
+}
+
+#c1 {
+	width: 33%;
+}
+
+#c2 {
+	width: 33%;
+}
+
+
+
