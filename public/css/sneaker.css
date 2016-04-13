@@ -32,6 +32,14 @@ body {
 }
 
 .sneaker {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	text-decoration: none;
 	text-shadow: 0 0 10px #000;
 	color: #fff;
 }
