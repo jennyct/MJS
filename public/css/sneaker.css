@@ -26,7 +26,7 @@ body {
 
 #sneakerHeader {
 	height: 23em;
-	background: url("//localhost/mjs/public/images/nua.jpg");
+	background: url("../images/nua.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
