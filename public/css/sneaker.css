@@ -43,8 +43,9 @@ body {
 }
 
 #main {
-	height: 438px;
-	width: 465px;
+	height: 440px;
+	width: 440px;
+	overflow: hidden;
 	float: right;	
 }
 
@@ -54,12 +55,13 @@ table {
 
 td {
 	height: 107px;
-	width: 113px;
+	width: 107px;
+	overflow: hidden;
 }
 
 td img {
 	height: 107px;
-	width: 113px;
+	width: 107px;
 	float: left;
 	position: relative;
 }
