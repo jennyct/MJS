@@ -30,10 +30,10 @@ body {
 	display: block;
 }
 
-img {
-	height: 429px;
-	width: 455px;
-	float: right;
+#main {
+	height: 438px;
+	width: 465px;
+	float: right;	
 }
 
 table {
