@@ -24,6 +24,18 @@ body {
     padding: 15px;
 }
 
+#sneakerHeader {
+	height: 23em;
+	background: url("//localhost/mjs/public/images/nua.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.sneaker {
+	text-shadow: 0 0 10px #000;
+	color: #fff;
+}
+
 .row:after {
 	content: "";
 	clear: both;
