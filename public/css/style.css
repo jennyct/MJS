@@ -41,9 +41,9 @@ body {
 }
 
 #businessHeader {
-	height: 40em;
-	background: url("https://theshoerackacademy.files.wordpress.com/2015/02/11971_kobepreludebanner.jpg");
-	background-size: cover;
+	height: 30em;
+	background: url("../images/nua.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
