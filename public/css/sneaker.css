@@ -38,23 +38,32 @@ table {
 
 td {
 	height: 107px;
-	width: 107px;
 	overflow: hidden;
+    width: 107px;
 }
 
 td img {
-	height: 107px;
-	width: 107px;
 	float: left;
+    height: 107px;
+    width: 107px;
 	position: relative;
 }
 
 /* Form */
-input {
-    width: 100%;
-    padding: 1em 1.5em;
-    margin: .5em 0;
-    display: inline-block;
+input, button {
     border: 1px solid #ccc;
     border-radius: .3em;
+    display: inline-block;
+    margin: .5em 0;
+    padding: 1em 1.5em;
+    width: 100%;
+}
+
+select {
+    border-radius: .3em;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1.5em 1.5em;
+    margin: .5em 0;
+    width: 100%;
 }
