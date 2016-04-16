@@ -41,9 +41,11 @@ body {
 }
 
 #businessHeader {
-	height: 30em;
+	height: 15em;
+    width: 100%;
+    margin-bottom: 1em;
 	background: url("../images/nua.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
