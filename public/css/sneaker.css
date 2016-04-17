@@ -34,8 +34,8 @@
 
 table {
 	float: left;
-    white-space: nowrap;
-}
+    margin-bottom: 1.5em
+}   
 
 td {
 	height: 107px;
@@ -71,4 +71,19 @@ select {
     padding: 1.5em 1.5em;
     margin: .5em 0;
     width: 100%;
+}
+
+#areaCode, #firstNum {
+    width: 15%;
+    padding-left: 3em;
+}
+
+#secondNum {
+    width: 20%;
+    padding-left: 4em;
+}
+
+.tel-number {
+    margin: .5em .2em;
+    padding: .4em 1em;
 }
