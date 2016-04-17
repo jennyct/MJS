@@ -15,11 +15,18 @@ var formController = (function() {
     var areaCode = document.querySelector('#areaCode');
     var firstNum = document.querySelector('#firstNum');
     var secondNum = document.querySelector('#secondNum');
-    var city = document.querySelector('input[name=city');
+    var city = document.querySelector('input[name=city]');
+    var ccNum = document.querySelector('#ccNum');
     var ccCSC = document.querySelector('#ccCSC');
+
+    form.action="mailto:email@example.com";
+    form.method = "POST";
+    form.enctype = "text/plain";
+    console.log(form);
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
+
 
         /* Validate form
            If false, bring up alert
@@ -27,15 +34,20 @@ var formController = (function() {
         */
         if( !_isText(firstName) )
             _alert("Enter a valid first name. No numbers.");
-        if( !_isText(lastName) )
+        else if( !_isText(lastName) )
             _alert("Enter a valid last name. No numbers.");
-        if( !_isText(city) )
+        else if( !_isText(city) )
             _alert("Enter a valid city. No numbers");
-        if( !_isValidZip() )
+        else if( !_isValidZip() )
             _alert("Enter a valid zipcode");
-        if( !_isValidPhone() ) 
+        else if( !_isValidPhone() ) 
             _alert("Enter a valid phone number");
-
+        else if( !_isNum(ccNum) ) 
+            _alert("Invalid credit card number");
+        else if( !_isNum(ccCSC) ) 
+            _alert("Enter valid CVV");
+        else 
+            form.submit();
     });
 
     function _isText(element) {
