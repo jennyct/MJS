@@ -16,7 +16,7 @@
 		<header id="sneakerHeader">
 			<div class="row">
 				<div class="col-12">
-					<a href="index.html" class="sneaker">MJS Sneakers</a>	
+					<a href="index.php" class="sneaker">MJS Sneakers</a>	
 				</div>
 			</div>
 		</header>
