@@ -43,16 +43,6 @@
 							'</tr>';
 						}
 					?>
-					<!-- <tr>
-						<td class="cell-1">
-							<a href="curry.html"/>
-							<img src="public/images/curry/1280303-001_DEFAULT.jpeg" alt="Under Armour Stephen Currys">
-						</td>
-						<td class="cell-2">UA Curry Two Elite</td>
-						<td class="cell-3">$129.99</td>
-						<td class="cell-4">Black/Gold</td>
-						<td class="cell-5">Synthetic Leather</td>
-					</tr> -->
 				</tbody>
 			</table>
 		</div>
