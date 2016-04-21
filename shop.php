@@ -9,7 +9,7 @@
 		<header id="businessHeader">
 			<div class="row">
 				<div class="col-12">
-					<a href="index.html" id="headerLink">MJS Sneakers</a>	
+					<a href="index.php" id="headerLink">MJS Sneakers</a>	
 				</div>
 			</div>
 		</header>
