@@ -19,9 +19,8 @@ var formController = (function() {
     var ccNum = document.querySelector('#ccNum');
     var ccCSC = document.querySelector('#ccCSC');
 
-    form.action="mailto:email@example.com";
+
     form.method = "POST";
-    form.enctype = "text/plain";
     console.log(form);
 
     form.addEventListener('submit', function(event) {

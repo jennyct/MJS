@@ -34,7 +34,7 @@
 						while($r = $query->fetch()) {
 							echo '<td class="cell-1">' .
 								'<a href="shoes.php?id=' . $r['id'] . '"/>' .
-								'<img src="public/images/' . $r['id'] . '/main.jpg"/>'.
+								'<img src="public/images/' . $r['folder_name'] . '/main.jpg"/>'.
 							'</td>' .  
 							'<td class="cell-2">' . $r['name'] . '</td>' .
 							'<td class="cell-3">' . $r['price'] . '</td>' .
