@@ -57,6 +57,8 @@
 		$shoeID = $_POST['shoeID'];
 	}
 
+	$phoneNumber = $areaCode . $phoneNumber . $phoneNumber1;
+
 	require("connect.php");
 	$state = $conn->prepare ("INSERT INTO orders (quantity, first_name, last_name, phone_number, address, city, zipcode, shipping, cc_number, cc_exp_date, cc_csc, shoe_id)
 		VALUES ('$quantity', '$firstName', '$lastName', '$phoneNumber', '$address', '$city', '$zipCode', '$shippingMethod', '$ccNumber', '$ccExp', '$ccCSC', '$shoeID')");
