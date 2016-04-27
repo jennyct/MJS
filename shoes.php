@@ -40,7 +40,7 @@
 					<input id="quanitity" type="number" name="quantity" placeholder="Quantity" required><br>
 					<input type="text" name="firstName" placeholder="Enter first name" required><br>
 					<input type="text" name="lastName" placeholder="Enter last name" required><br>
-					(<input type="tel" class="tel-number" size="3" id="areaCode" placeholder='xxx'maxlength="3" required>) <input type="tel" class="tel-number" name="phoneNumber" id="firstNum" placeholder="xxx" maxlength="3" required> - <input type="tel" class="tel-number" size="4" id="secondNum" placeholder="xxxx" maxlength="4" required>
+					(<input type="tel" class="tel-number" size="3" id="areaCode" placeholder='xxx'maxlength="3" name="areaCode" required>) <input type="tel" class="tel-number" name="phoneNumber" id="firstNum" placeholder="xxx" maxlength="3" required> - <input type="tel" class="tel-number" size="4" id="secondNum" placeholder="xxxx" maxlength="4" name="phoneNumber1" required>
 					<br>
 					<input type="text" name="address" placeholder="Enter address" required><br>
 					<input type="text" name="city" placeholder="Enter City" required><br>
@@ -53,6 +53,7 @@
 					<input id="ccNum" type="tel" name="ccNumber" placeholder="Enter Credit Card Number" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" required><br>
 					<input id="month" type="month" name="ccExp" placeholder="Enter Credit Card Expiration" required><br>
 					<input id="ccCSC" type="tel" name="ccCSC" placeholder="Enter Credit Card CSC" onKeyDown="if(this.value.length==3 && event.keyCode!=8) return false;" required><br>
+					<input id="shoeID" type="hidden" name="shoeID" value="<?php echo $sneaker['id'] ?>">
 
 					<button type="submit">Submit</button>
 				</form>
