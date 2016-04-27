@@ -59,5 +59,7 @@
 			</div>
 		</div>
 		<script src="public/js/hover.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+		<script src="public/js/submit.js"></script>
 	</body>
 </html>
