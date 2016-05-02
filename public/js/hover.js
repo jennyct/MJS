@@ -26,7 +26,6 @@ var formController = (function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
-
         /* Validate form
            If false, bring up alert
            Else bring up email client 
@@ -45,8 +44,15 @@ var formController = (function() {
             _alert("Invalid credit card number");
         else if( !_isNum(ccCSC) ) 
             _alert("Enter valid CVV");
-        else 
-            form.submit();
+        else {
+            var formData = $(this).serializeArray();
+            $.ajax({
+                type : "POST", 
+                url : 'orders.php',
+                data : formData,
+                success : addOrder
+            });
+        }
     });
 
     function _isText(element) {
@@ -74,3 +80,8 @@ var formController = (function() {
     }
 
 })();
+
+var addOrder = function(data){
+    alert("Order processed successfully!");
+    console.log(data);
+};

@@ -56,32 +56,13 @@
 	if (isset($_POST['shoeID'])) {
 		$shoeID = $_POST['shoeID'];
 	}
-	echo "quantity: " . $quantity;
-	echo "\n";
-	echo "first name: " . $firstName;
-	echo "\n";
-	echo "last name: " . $lastName;
-	echo "\n";
-	echo "phone number: " . $areaCode . $phoneNumber . $phoneNumber1;
-	echo "\n";
-	echo "address: " . $address;
-	echo "\n";
-	echo "city: " . $city;
-	echo "\n";
-	echo "zipcode: " . $zipCode;
-	echo "\n";
-	echo "shipping method: " . $shippingMethod;
-	echo "\n";
-	echo "cc number: " . $ccNumber;
-	echo "\n";
-	echo "cc exp: " . $ccExp;
-	echo "\n";
-	echo "cc csc: " . $ccCSC;
-	echo "\n";
-	echo "shoe id: " . $shoeID;
+
+	$phoneNumber = $areaCode . $phoneNumber . $phoneNumber1;
 
 	require("connect.php");
 	$state = $conn->prepare ("INSERT INTO orders (quantity, first_name, last_name, phone_number, address, city, zipcode, shipping, cc_number, cc_exp_date, cc_csc, shoe_id)
 		VALUES ('$quantity', '$firstName', '$lastName', '$phoneNumber', '$address', '$city', '$zipCode', '$shippingMethod', '$ccNumber', '$ccExp', '$ccCSC', '$shoeID')");
 	$state->execute();
+
+	echo "hello";
 ?>
