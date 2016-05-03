@@ -11,6 +11,20 @@
 		<link rel="stylesheet" href="public/css/style.css"/>
 		<link rel="stylesheet" href="public/css/sneaker.css"/>
 		<title><?php echo $sneaker['name']; ?></title>
+		<script>
+        	function showCity(str) {
+		 document.getElementById("txtHint").innerHTML = "";
+        	 if (str.length > 0) {   
+        	 var xmlhttp = new XMLHttpRequest();
+        	 xmlhttp.onreadystatechange = function() {
+            	 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;}
+        			}
+        	xmlhttp.open("GET", "cities.php?q="+str, true);
+        	xmlhttp.send();
+    				   }
+				}
+		</script>
 	</head>
 	<body>
 		<header id="sneakerHeader">
@@ -42,8 +56,9 @@
 					<input type="text" name="lastName" placeholder="Enter last name" required><br>
 					(<input type="tel" class="tel-number" size="3" id="areaCode" placeholder='xxx'maxlength="3" name="areaCode" required>) <input type="tel" class="tel-number" name="phoneNumber" id="firstNum" placeholder="xxx" maxlength="3" required> - <input type="tel" class="tel-number" size="4" id="secondNum" placeholder="xxxx" maxlength="4" name="phoneNumber1" required>
 					<br>
-					<input type="text" name="address" placeholder="Enter address" required><br>
-					<input type="text" name="city" placeholder="Enter City" required><br>
+					<input type="text" name="address" placeholder="Enter Address" required><br>
+					<input type="text" name="city" placeholder="Enter City" onkeyup="showCity(this.value)" required><br>
+                                        Suggested City: <span id="txtHint"></span><br>
 					<input type="number" name="zipCode" placeholder="Enter Zip Code"><br>
 					<select name="shippingMethod" id="shippingMethod" required>
 						<option value="overnight">Overnight</option>
