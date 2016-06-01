@@ -52,7 +52,7 @@ public class shoesBean{
         }
         catch(Exception ex)
         {
-                error="<b>Contact Administrator :</b><br/>" + ex;
+                error="<b>Some error :</b><br/>" + ex;
                 System.out.println("Your query is not working" + ex);
         }
        return allData;
